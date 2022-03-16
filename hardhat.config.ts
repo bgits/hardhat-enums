@@ -83,6 +83,13 @@ module.exports = {
             blockGasLimit: 0x1fffffffffffff,
             allowUnlimitedContractSize: true
         },
+         mainnetFork: {
+			     chainId: 1,
+			     url: `https://eth-mainnet.alchemyapi.io/v2/${process.env.ALCHEMY}`,
+			     forking: {
+				     blockNumber: 12821000
+			     }
+         },
         ropsten: {
             url: ropsten,
             accounts,
