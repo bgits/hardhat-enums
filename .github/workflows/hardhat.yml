@@ -6,11 +6,7 @@ name: Hardhat full test suite CI
 on:
   push:
     branches: 
-      - main 
-  pull_request:
-    branches:
-      - '**'        # matches every branch
-
+      - '**'
 env:
   ALCHEMY: ${{ secrets.ALCHEMY }}
   TEST_MNEMONIC: ${{ secrets.TEST_MNEMONIC }}
